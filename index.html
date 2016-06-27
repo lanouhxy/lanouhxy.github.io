@@ -90,31 +90,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1、section和article标签"><a href="#1、section和article标签" class="headerlink" title="1、section和article标签"></a>1、section和article标签</h2><p>section：把相关内容聚合到一起的div标签<br>article：作用与多个相关内容的聚合<br>aside：侧边栏，独立于主题内容部分，一般作用域广告位</p>
-<p><pre><br>&lt; header &gt;&lt; /header &gt;<br>&lt; nav &gt;&lt; /nav&gt;<br>&lt; main &gt;<br>    &lt; article &gt;<br>    &lt; section &gt;&lt; /section &gt;<br>    &lt; /article &gt;<br>&lt; /main &gt;<br>&lt; aside &gt;&lt; /aside &gt;<br>&lt; footer &gt;&lt; /footer &gt;<br></pre></p>
+        <h2 id="1、section和article标签"><a href="#1、section和article标签" class="headerlink" title="1、section和article标签"></a>1、section和article标签</h2><p>section：把相关内容聚合到一起的div标签<br>article：作用与多个相关内容的聚合<br>aside：侧边栏，独立于主题内容部分，一般作用于广告位</p>
+<p><pre><br>页面布局的格式：<br>&lt; header &gt;&lt; /header &gt;<br>&lt; nav &gt;&lt; /nav&gt;<br>&lt; main &gt;<br>    &lt; article &gt;<br>    &lt; section &gt;&lt; /section &gt;<br>    &lt; /article &gt;<br>&lt; /main &gt;<br>&lt; aside &gt;&lt; /aside &gt;<br>&lt; footer &gt;&lt; /footer &gt;<br></pre></p>
 <h2 id="2、form中新增标签"><a href="#2、form中新增标签" class="headerlink" title="2、form中新增标签"></a>2、form中新增标签</h2><p><pre><br>&lt; input type=”tel” &gt;文本框<br>&lt; input type=”search” &gt;搜索框，圆角格式<br>&lt; input type=”url” &gt;输入单个网址<br>&lt; input type=”email” &gt;输入电子邮件<br>&lt; input type=”datename” &gt;定义日期，带有calendar和time控件<br>&lt; input type=”date” &gt;定义日期，带有calendar和time控件<br>&lt; input type=”month” &gt;定义月份，带有calendar控件<br>&lt; input type=”week” &gt;定义年份和周数，带有calendar控件<br>&lt; input type=”time” &gt;定义时分秒，带有time控件<br>&lt; input type=”datetime-local” &gt;定义日期有calendar和time控件<br>&lt; input type=”number” &gt;只能输入数字，移动端跳出数字输入框<br>&lt; input type=”range” &gt;一个可以拖动的进度条<br>&lt; input type=”color” &gt;定义颜色<br></pre></p>
-<h3 id="input标签新增的属性"><a href="#input标签新增的属性" class="headerlink" title="input标签新增的属性"></a>input标签新增的属性</h3><p>autofocus: 页面加载时，光标自动对准<br>placeholder: 描述输入字段的提示信息<br>required: 提供基本验证，比如验证是否输入为空<br>pattern: 用于验证输入字段模式（正则表达式）<br>autocomplete：记录搜索历史，当前面输入相同时，自动提示历史</p>
-<p><pre><br>&lt; input type=”text” value=”” required placeholder=”请输入密码” &gt;<br></pre></p>
-<h2 id="3、audio标签及属性"><a href="#3、audio标签及属性" class="headerlink" title="3、audio标签及属性"></a>3、audio标签及属性</h2><p>audio：定义声音、音乐、音频流<br>controls：显示控件，比如播放按钮，进度条，声音<br>autoplay：自动播放<br>loop：结束后重新播放<br>preload：自动加载<br>src：引入地址<br>source：用于匹配浏览器所能播放的音频格式  </p>
+<h3 id="input标签新增的属性"><a href="#input标签新增的属性" class="headerlink" title="input标签新增的属性"></a>input标签新增的属性</h3><p>autofocus：页面加载时，光标自动对准<br>placeholder:：描述输入字段的提示信息<br>required：提供基本验证，比如验证是否输入为空<br>pattern：用于验证输入字段模式（正则表达式）<br>autocomplete：记录搜索历史，当前面输入相同时，自动提示历史</p>
+<p><pre><br>&lt; input type=”text” value=”” required placeholder=”请输入密码” autofocus &gt;<br></pre></p>
+<h2 id="3、audio标签及属性"><a href="#3、audio标签及属性" class="headerlink" title="3、audio标签及属性"></a>3、audio标签及属性</h2><p>audio：定义声音、音乐、音频流<br>controls：显示控件，比如播放按钮，进度条，声音<br>autoplay：自动播放<br>loop：循环播放<br>preload：提前加载<br>src：引入地址<br>source：用于匹配浏览器所能播放的音频格式  </p>
 <p><pre><br>&lt; audio controls autoplay loop &gt;<br>&lt; source src=”” title=”” &gt;<br>&lt; source src=”” title=”” &gt;<br>&lt; source src=”” title=”” &gt;<br>&lt; source src=”” title=”” &gt;<br>&lt; source src=”” title=”” &gt;<br>&lt; /audio &gt;<br></pre></p>
-<h2 id="4、video标签及属性"><a href="#4、video标签及属性" class="headerlink" title="4、video标签及属性"></a>4、video标签及属性</h2><p>video：定义视频，比如电影片段及其他视频流<br>autoplay：自动播放<br>controls：显示控件，如播放按钮<br>height：定义播放器的高度<br>width：定义播放器的宽度<br>loop：结束后重新播放<br>preload：自动加载<br>src：引入地址  </p>
+<h2 id="4、video标签及属性"><a href="#4、video标签及属性" class="headerlink" title="4、video标签及属性"></a>4、video标签及属性</h2><p>video：定义视频，比如电影片段及其他视频流<br>autoplay：自动播放<br>controls：显示控件，如播放按钮<br>height：定义播放器的高度<br>width：定义播放器的宽度<br>loop：循环播放<br>preload：提前加载<br>src：引入地址  </p>
 <p><pre><br>&lt; video src=”” controls autoplay loop preload height=”200” &gt;&lt; /video &gt;<br></pre></p>
-<h2 id="5、hgroup、details、summary、mark、meter、progress标签"><a href="#5、hgroup、details、summary、mark、meter、progress标签" class="headerlink" title="5、hgroup、details、summary、mark、meter、progress标签"></a>5、hgroup、details、summary、mark、meter、progress标签</h2><p>hgroup: 必须包括一个以上的h标签。<br>details：用于描述文档和文档的某个部分的细节，open属性定义details里面内容是否可见<br>summary：与details标签一起使用，标题可见，点击标题显示更详细的内容<br>mark：高亮文本，常用语搜索时候标记关键字<br>meter：定义一直范围的标量测量<br>progress：定义运行进度，进度条式样  </p>
-<p><pre><br>&lt; hgroup &gt;<br>    &lt; h1 &gt;&lt; /h1 &gt;<br>    &lt; h2 &gt;&lt; /h2 &gt;<br>&lt; /group &gt;</pre></p>
-<p>&lt; details &gt;<br>    &lt; summary &gt;目录1&lt; /summary &gt;<br>    &lt; details &gt;<br>        &lt; summary &gt;目录2&lt; /summary &gt;<br>        &lt; details &gt;<br>            &lt; summary &gt;目录3&lt; /summary &gt;<br>        &lt; /details &gt;<br>    &lt; /details &gt;<br>&lt; /details &gt;</p>
-<p>&lt; meter value=”5” min=”0”max=”10” &gt;&lt; /meter &gt;</p>
-<p>&lt; progress value=”20” max=”100” &gt;&lt; /progress &gt;<br></p>
-<h2 id="6、其他标签"><a href="#6、其他标签" class="headerlink" title="6、其他标签"></a>6、其他标签</h2><p>1、abbr:表现一个缩写形式  </p>
-<p><pre><br>&lt; abbr title=”People’s Republic of China” &gt;PRC&lt; /abbr &gt;<br></pre><br>2、address:一般用于footer,定义文章信息<br>3、bdi:设置一段文本,时期脱离父元素文本是指的方向<br>4、blockquote:一般引入长的语句,有固定的margin<br>5、code:作用于单行代码<br>6、cite:表示文本对某个文献的引用,应用的字体倾斜,一般指书籍,歌曲,电影等的标题;<br>7、datalist:下拉框,必须和input结合使用,list属性配合id名 </p>
-<p><pre><br>&lt; input id=”mycar” list=”cars” &gt;<br>&lt; datalist id=”cars” &gt;<br>    &lt; option value=”跑车” &gt;<br>    &lt; option value=”自行车” &gt;<br>    &lt; option value=”轿车” &gt;<br>&lt; /datalist &gt;<br></pre><br>8、dialog:伪类,加open属性才会显示<br>9、del:定义删除文本<br>10、embed：引入一个插件，必须要有src属性<br>11、figure：定义图像，图表等，figcaption定义标题，两者搭配使用</p>
+<h2 id="5、hgroup、details、summary、mark、meter、progress标签"><a href="#5、hgroup、details、summary、mark、meter、progress标签" class="headerlink" title="5、hgroup、details、summary、mark、meter、progress标签"></a>5、hgroup、details、summary、mark、meter、progress标签</h2><p>hgroup: 必须包括一个以上的h标签。<br>details：用于描述文档和文档的某个部分的细节，open属性定义details里面内容是否可见<br>summary：与details标签一起使用，作为details的标题，点击标题显示更详细的内容<br>mark：高亮文本，常用语搜索时候标记关键字<br>meter：定义一直范围的标量测量<br>progress：定义运行进度，进度条式样  </p>
+<p><pre><br>&lt; hgroup &gt;<br>    &lt; h1 &gt;&lt; /h1 &gt;<br>    &lt; h2 &gt;&lt; /h2 &gt;<br>&lt; /group &gt;<br>&lt; details &gt;<br>    &lt; summary &gt;目录1&lt; /summary &gt;<br>    &lt; details &gt;<br>        &lt; summary &gt;目录2&lt; /summary &gt;<br>        &lt; details &gt;<br>            &lt; summary &gt;目录3&lt; /summary &gt;<br>        &lt; /details &gt;<br>    &lt; /details &gt;<br>&lt; /details &gt;<br>&lt; meter value=”5” min=”0”max=”10” &gt;&lt; /meter &gt;<br>&lt; progress value=”20” max=”100” &gt;&lt; /progress &gt;<br></pre></p>
+<h2 id="6、其他标签"><a href="#6、其他标签" class="headerlink" title="6、其他标签"></a>6、其他标签</h2><p>1、abbr：表现一个缩写形式  </p>
+<p><pre><br>&lt; abbr title=”People’s Republic of China” &gt;PRC&lt; /abbr &gt;<br></pre><br>2、address：一般用于footer,定义文章信息<br>3、bdi：设置一段文本,使其脱离父元素文本是指的方向<br>4、blockquote：一般引入长的语句,有固定的margin<br>5、code：作用于单行代码<br>6、cite：表示文本对某个文献的引用,应用的字体倾斜,一般指书籍,歌曲,电影等的标题;<br>7、datalist：下拉框,必须和input结合使用,list属性配合id名 </p>
+<p><pre><br>&lt; input id=”mycar” list=”cars” &gt;<br>&lt; datalist id=”cars” &gt;<br>    &lt; option value=”跑车” &gt;<br>    &lt; option value=”自行车” &gt;<br>    &lt; option value=”轿车” &gt;<br>&lt; /datalist &gt;<br></pre><br>8、dialog：伪类,加open属性才会显示<br>9、del：定义删除文本<br>10、embed：引入一个插件，必须要有src属性<br>11、figure：定义图像，图表等，figcaption定义标题，两者搭配使用</p>
 <p><pre><br>&lt; figure &gt;<br>    &lt; figcaption &gt;图片标题&lt; /figcaption &gt;<br>&lt; /figure &gt;<br></pre><br>12、fieldset：容纳一组表单元素，赋予特殊的边界效果，legend属性定义标题<br>13、ins：定义插入文本</p>
 <p><pre><br>&lt; p &gt;地方很<ins>的话</ins>会觉<del>复合</del>很机&lt; /p&gt;<br></pre><br>14、keygen：提交给服务器一个秘钥<br>15、label：定义input标签，for属性和input标签的id属性相关联,当点击label中的文本时候，选中关联的input标签  </p>
-<p><pre><br>&lt; label for=”username”&gt;用户名<br>&lt; input type=”text” id=”username”&gt;<br></pre><br>16、main:定义正文部分<br>17、menu：定义菜单<br>18、output:和input搭配是通用，输出input值<br>19、pre：定义多行代码<br>20、q:应用文字,文字加引号,一般引入短的语句<br>21、wbr：换行符，br标签是强制换行，wbr是可以换行，当空间不够时，就会换行<br>22、time：时分秒和年月日要用 T 分开<br>&lt; time datetime=”2016-06-17T15:25”&gt;2016-06-17 15:25&lt; /time &gt;<br>这些标签：4，6，20是三种应用方式；5，19分别定义单行和多行代码；9、13分别为删除和插入文本。</p>
+<p><pre><br>&lt; label for=”username”&gt;用户名<br>&lt; input type=”text” id=”username”&gt;<br></pre><br>16、main：定义正文部分<br>17、menu：定义菜单<br>18、output：和input搭配是通用，输出input值<br>19、pre：定义多行代码<br>20、q：应用文字,文字加引号,一般引入短的语句<br>21、wbr：换行符，br标签是强制换行，wbr是可以换行，当空间不够时，就会换行<br>22、time：时分秒和年月日要用 T 分开  </p>
+<p><pre><br>&lt; time datetime=”2016-06-17T15:25”&gt;2016-06-17 15:25&lt; /time &gt;<br></pre><br>这些标签：4，6，20是三种应用方式；5，19分别定义单行和多行代码；9、13分别为删除和插入文本。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="cipxz58as0001a5snecj11h8f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="cipxzcf9d0000avsnhhyevs2x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li></ul>
@@ -174,7 +172,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="cipxz58b00004a5snwfm8nbwg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="cipxzcf9o0003avsn8zrw2z5z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li></ul>
@@ -217,7 +215,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="cipxz58am0000a5sniemhtpx2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="cipxzcf9j0001avsnwow4bp7f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li></ul>
@@ -259,7 +257,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="cipxz58b20006a5sns6cs0pmg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="cipxzcf9q0004avsnqq9u7qeu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
@@ -298,7 +296,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="cipxz58b40008a5sn5ccaqv2u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="cipxzcf9u0008avsn5tkxtkdn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li></ul>
@@ -345,7 +343,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipxz58az0003a5snfyfg443h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipxzcf9r0006avsnj2kgukch" class="article-share-link">Share</a>
       
       
     </footer>
