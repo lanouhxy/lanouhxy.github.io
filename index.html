@@ -94,14 +94,14 @@
 <h2 id="2、兄弟选择器和通用选择器"><a href="#2、兄弟选择器和通用选择器" class="headerlink" title="2、兄弟选择器和通用选择器"></a>2、兄弟选择器和通用选择器</h2><p>兄弟选择器：形式E+F{}，1、必须是同级 2、必须相邻 3、必须在下方 4、只有一个符合要求<br>通用选择器：形式E~F{},    1、必须同级 2、必须在下方 3、可以有多个符合要求 </p>
 <h2 id="3、属性选择器"><a href="#3、属性选择器" class="headerlink" title="3、属性选择器"></a>3、属性选择器</h2><p>1.E[attr]：包含attr属性的E标签<br>2.E[attr=”value”]：属性attr=value的E标签<br>3.E[attr~=”value”]：表示几个空格隔开的属性值包含value<br>4.E[attr^=”value”]：表示以value开头的E标签<br>5.E[attr$=”value”]：表示以value结尾的E标签<br>6.E[attr*=”value”]：表示包含value值的E标签<br>7.E[attr|=”value”]：以value或value-开头的E标签<br>这些标签中，2和6标签比较常用</p>
 <h2 id="4、UI元素伪类选择器"><a href="#4、UI元素伪类选择器" class="headerlink" title="4、UI元素伪类选择器"></a>4、UI元素伪类选择器</h2><p>disabled、enabled、checked、focus四种属性一般用在表单元素中,否定选择器一般和属相选择器配合使用。<br>1.input:focus{}选中含有focus属性的input标签，表现的形式<br>2.input:disabled{}有disabled属性的标签，不能选中<br>3.input:checked{}checked属性用在复选框里，选中表现的形式<br>4.input:enabled{}默认属性，可用的表单属性，与disabled属性相反<br>5.input:not([type=”sumbit”])用于不满足某类条件的标签   </p>
-<h2 id="5、nth选择器"><a href="#5、nth选择器" class="headerlink" title="5、nth选择器"></a>5、nth选择器</h2><p>(1) first/last-child<br>E:first-child/last-child{}：选择E父级中的第一个/最后一个子元素，如果该元素是E元素，则表示形式<br>(2)nth-child<br>E:nth-child(n){}：选择E所在父级中第n个元素，如果该元素是E元素，则表现样式<br>E:nth-child(n+2){}：选择E所在父级中2及2以后的E元素<br>E:nth-child(-n+2){}：选择E所在父级中2及2之前的E元素<br>E:nth-child(2n+1){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(2n){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>E:nth-child(odd){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(even){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>(3)nth-of-type和nth-child相比较<br>E:nth-of-type(n){}：选择E所在的父级中第n个E元素<br>E:nth-child(n){}：选择E所在的父级中第n个元素，如果是E元素，则显示样式<br>E:first-of-type{}：选择E所在父元素中，第一个E元素<br>E:first-child{}：选择E所在父级中的第一个元素，结构上的第一个元素，如果是E元素，就表现样式<br>E:only-child{}：选择元素是它父级的唯一一个子元素，父级只包含一个子元素<br>E:only-of-type{}：选择元素是它父级元素的唯一一个相同类型的子元素</p>
+<h2 id="5、nth选择器"><a href="#5、nth选择器" class="headerlink" title="5、nth选择器"></a>5、nth选择器</h2><p>(1) first/last-child<br>E:first-child/last-child{}：选择E父级中的第一个/最后一个子元素，如果该元素是E元素，则表示形式<br>(2)nth-child<br>E:nth-child(n){}：选择E所在父级中第n个元素，如果该元素是E元素，则表现样式<br>E:nth-child(n+2){}：选择E所在父级中2及2以后的E元素<br>E:nth-child(-n+2){}：选择E所在父级中2及2之前的E元素<br>E:nth-child(2n+1){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(2n){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>E:nth-child(odd){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(even){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>(3)nth-of-type和nth-child相比较<br>E:nth-of-type(n){}：选择E所在的父级中第n个E元素<br>E:nth-child(n){}：选择E所在的父级中第n个元素，如果是E元素，则显示样式<br>E:first-of-type{}：选择E所在父元素中，第一个E元素<br>E:first-child{}：选择E所在父级中的第一个元素，结构上的第一个元素，如果是E元素，就表现样式<br>E:only-child{}：选择元素是它父级的唯一一个子元素，父级只包含一个子元素<br>E:only-of-type{}：选择元素是它父级元素的唯一一个相同类型的子元素<br>总的来说，nth-of-type是在一类元素中选择，nth-child是在所有元素中选择，再判断是否是所需要的E元素</p>
 <h2 id="6、伪元素"><a href="#6、伪元素" class="headerlink" title="6、伪元素"></a>6、伪元素</h2><p>(1)::before/::after<br>E::before{}：在E元素的前面插入内容，<br>E::after{}：在E元素的后面插入内容，<br>这两种常和content配合使用，一般用来清除浮动，还有照片的icon<br>(2)::first-letter/::first-line<br>E::first-letter{}：选择文本的第一个字母或者汉字，主要用于段落排版<br>E::first-line{}：选择元素的第一行<br>(3)::selection<br>E::selection{}：用来改变浏览网页选中文本的默认效果，只能设置两个属性1.background  2.color</p>
 <h2 id="7、怪异盒模型box-sizing"><a href="#7、怪异盒模型box-sizing" class="headerlink" title="7、怪异盒模型box-sizing"></a>7、怪异盒模型box-sizing</h2><p>(1)box-sizing:content-box：默认值，正常的盒模型<br>(2)box-sizing:border-box：这个盒模型，定义的宽高包括border和padding，改变padding和border的数值不会改变盒子的大小<br>(3)box-sizing:padding-box：盒模型的宽高包含padding，改变padding的数值不会改变盒子大小<br>(4)outline：只是绘制元素周围的一条线，位于边框边缘周围，起到突出元素的作用，轮廓线不占空间，也不一定是矩形</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="cipz9yrvp0003s5sn1c73uq6x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="cipzaai2r0003tnsn3dl1jsez" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li></ul>
@@ -157,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="cipz9yrvf0000s5sn7uvi7rq5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="cipzaai2l0001tnsnouw0voen" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li></ul>
@@ -217,7 +217,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="cipz9yrvt0006s5snf3vmc9dc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="cipzaai2v0006tnsnriq808xn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li></ul>
@@ -260,7 +260,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="cipz9yrvk0001s5sn5dcf1zoh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="cipzaai2h0000tnsnam7v6ga9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li></ul>
@@ -302,7 +302,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="cipz9yrvy0009s5snal3jzp2u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="cipzaai2x0008tnsnr2fkda1w" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
@@ -341,7 +341,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="cipz9yrvw0008s5sn1ucrm1xb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="cipzaai2z0009tnsn83md2tzg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li></ul>
@@ -388,7 +388,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipz9yrvr0004s5sn8n74a12x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipzaai2s0004tnsnrbbo9l3w" class="article-share-link">Share</a>
       
       
     </footer>
