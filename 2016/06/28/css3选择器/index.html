@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css3选择器 | 何新远博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、子元素选择器（和后代选择器比较）子元素选择器：形式E&amp;gt;F{}，选中的是对应的子元素，不包括子元素包含的子元素。后代选择器：形式E F{}，选中是所有的后代，包括子元素里面的子元素。
+2、兄弟选择器和通用选择器兄弟选择器：形式E+F{}，1、必须是同级 2、必须相邻 3、必须在下方 4、只有一个符合要求通用选择器：形式E~F{},    1、必须同级 2、必须在下方 3、可以有多个符合要求">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css3选择器">
+<meta property="og:url" content="http://yoursite.com/2016/06/28/css3选择器/index.html">
+<meta property="og:site_name" content="何新远博客">
+<meta property="og:description" content="1、子元素选择器（和后代选择器比较）子元素选择器：形式E&amp;gt;F{}，选中的是对应的子元素，不包括子元素包含的子元素。后代选择器：形式E F{}，选中是所有的后代，包括子元素里面的子元素。
+2、兄弟选择器和通用选择器兄弟选择器：形式E+F{}，1、必须是同级 2、必须相邻 3、必须在下方 4、只有一个符合要求通用选择器：形式E~F{},    1、必须同级 2、必须在下方 3、可以有多个符合要求">
+<meta property="og:updated_time" content="2016-06-28T09:51:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css3选择器">
+<meta name="twitter:description" content="1、子元素选择器（和后代选择器比较）子元素选择器：形式E&amp;gt;F{}，选中的是对应的子元素，不包括子元素包含的子元素。后代选择器：形式E F{}，选中是所有的后代，包括子元素里面的子元素。
+2、兄弟选择器和通用选择器兄弟选择器：形式E+F{}，1、必须是同级 2、必须相邻 3、必须在下方 4、只有一个符合要求通用选择器：形式E~F{},    1、必须同级 2、必须在下方 3、可以有多个符合要求">
+  
+    <link rel="alternate" href="/atom.xml" title="何新远博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">何新远博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">程序员之旅</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css3选择器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/28/css3选择器/" class="article-date">
+  <time datetime="2016-06-28T07:56:17.000Z" itemprop="datePublished">2016-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css3选择器
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、子元素选择器（和后代选择器比较）"><a href="#1、子元素选择器（和后代选择器比较）" class="headerlink" title="1、子元素选择器（和后代选择器比较）"></a>1、子元素选择器（和后代选择器比较）</h2><p>子元素选择器：形式E&gt;F{}，选中的是对应的子元素，不包括子元素包含的子元素。<br>后代选择器：形式E F{}，选中是所有的后代，包括子元素里面的子元素。</p>
+<h2 id="2、兄弟选择器和通用选择器"><a href="#2、兄弟选择器和通用选择器" class="headerlink" title="2、兄弟选择器和通用选择器"></a>2、兄弟选择器和通用选择器</h2><p>兄弟选择器：形式E+F{}，1、必须是同级 2、必须相邻 3、必须在下方 4、只有一个符合要求<br>通用选择器：形式E~F{},    1、必须同级 2、必须在下方 3、可以有多个符合要求 </p>
+<h2 id="3、属性选择器"><a href="#3、属性选择器" class="headerlink" title="3、属性选择器"></a>3、属性选择器</h2><p>1.E[attr]：包含attr属性的E标签<br>2.E[attr=”value”]：属性attr=value的E标签<br>3.E[attr~=”value”]：表示几个空格隔开的属性值包含value<br>4.E[attr^=”value”]：表示以value开头的E标签<br>5.E[attr$=”value”]：表示以value结尾的E标签<br>6.E[attr*=”value”]：表示包含value值的E标签<br>7.E[attr|=”value”]：以value或value-开头的E标签<br>这些标签中，2和6标签比较常用</p>
+<h2 id="4、UI元素伪类选择器"><a href="#4、UI元素伪类选择器" class="headerlink" title="4、UI元素伪类选择器"></a>4、UI元素伪类选择器</h2><p>disabled、enabled、checked、focus四种属性一般用在表单元素中,否定选择器一般和属相选择器配合使用。<br>1.input:focus{}选中含有focus属性的input标签，表现的形式<br>2.input:disabled{}有disabled属性的标签，不能选中<br>3.input:checked{}checked属性用在复选框里，选中表现的形式<br>4.input:enabled{}默认属性，可用的表单属性，与disabled属性相反<br>5.input:not([type=”sumbit”])用于不满足某类条件的标签   </p>
+<h2 id="5、nth选择器"><a href="#5、nth选择器" class="headerlink" title="5、nth选择器"></a>5、nth选择器</h2><p>(1) first/last-child<br>E:first-child/last-child{}：选择E父级中的第一个/最后一个子元素，如果该元素是E元素，则表示形式<br>(2)nth-child<br>E:nth-child(n){}：选择E所在父级中第n个元素，如果该元素是E元素，则表现样式<br>E:nth-child(n+2){}：选择E所在父级中2及2以后的E元素<br>E:nth-child(-n+2){}：选择E所在父级中2及2之前的E元素<br>E:nth-child(2n+1){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(2n){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>E:nth-child(odd){}：选择E所在父级中的奇数元素，如果是E元素，则表现样式<br>E:nth-child(even){}：选择E所在父级中的偶数元素，如果是E元素，则表现样式<br>(3)nth-of-type和nth-child相比较<br>E:nth-of-type(n){}：选择E所在的父级中第n个E元素<br>E:nth-child(n){}：选择E所在的父级中第n个元素，如果是E元素，则显示样式<br>E:first-of-type{}：选择E所在父元素中，第一个E元素<br>E:first-child{}：选择E所在父级中的第一个元素，结构上的第一个元素，如果是E元素，就表现样式<br>E:only-child{}：选择元素是它父级的唯一一个子元素，父级只包含一个子元素<br>E:only-of-type{}：选择元素是它父级元素的唯一一个相同类型的子元素</p>
+<h2 id="6、伪元素"><a href="#6、伪元素" class="headerlink" title="6、伪元素"></a>6、伪元素</h2><p>(1)::before/::after<br>E::before{}：在E元素的前面插入内容，<br>E::after{}：在E元素的后面插入内容，<br>这两种常和content配合使用，一般用来清除浮动，还有照片的icon<br>(2)::first-letter/::first-line<br>E::first-letter{}：选择文本的第一个字母或者汉字，主要用于段落排版<br>E::first-line{}：选择元素的第一行<br>(3)::selection<br>E::selection{}：用来改变浏览网页选中文本的默认效果，只能设置两个属性1.background  2.color</p>
+<h2 id="7、怪异盒模型box-sizing"><a href="#7、怪异盒模型box-sizing" class="headerlink" title="7、怪异盒模型box-sizing"></a>7、怪异盒模型box-sizing</h2><p>(1)box-sizing:content-box：默认值，正常的盒模型<br>(2)box-sizing:border-box：这个盒模型，定义的宽高包括border和padding，改变padding和border的数值不会改变盒子的大小<br>(3)box-sizing:padding-box：盒模型的宽高包含padding，改变padding的数值不会改变盒子大小<br>(4)outline：只是绘制元素周围的一条线，位于边框边缘周围，起到突出元素的作用，轮廓线不占空间，也不一定是矩形</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="cipz8z8750003ousnlxsml7af" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/27/H5新增标签/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">H5新增标签</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS3多种选择器/" style="font-size: 10px;">CSS3多种选择器</a> <a href="/tags/H5新增标签/" style="font-size: 10px;">H5新增标签</a> <a href="/tags/em-rem-max-width-vw/" style="font-size: 10px;">em/rem/max-width/vw</a> <a href="/tags/meta标签与ico图标/" style="font-size: 10px;">meta标签与ico图标</a> <a href="/tags/小程序员正在成长/" style="font-size: 10px;">小程序员正在成长</a> <a href="/tags/用hexo搭建博客/" style="font-size: 10px;">用hexo搭建博客</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/28/css3选择器/">css3选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/27/H5新增标签/">H5新增标签</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/24/meta标签详解及添加ico图标/">meta标签详解及添加ico图标</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/23/CSS3第一天详解/">CSS3知识点梳理</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/22/博客2/">创建博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 何新远<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
