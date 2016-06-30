@@ -68,6 +68,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-过渡-变形-动画" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/30/过渡-变形-动画/" class="article-date">
+  <time datetime="2016-06-30T03:47:01.000Z" itemprop="datePublished">2016-06-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/30/过渡-变形-动画/">过渡-变形-动画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、transition过渡"><a href="#1、transition过渡" class="headerlink" title="1、transition过渡"></a>1、transition过渡</h2><p>1、transition:all 1.5s ease 1s;<br>transition-property:all/width/height/opacity,过渡的属性，不是所有属性都可以过渡，border大小就不可以过渡，而且过渡的属性，过渡前后的数值都需要写明；<br>transition-duration:过渡需要的时间，单位是s，可以为小数；<br>transition-timing-function:过渡变换的效率，ease/linear/ease-in等属性；<br>transition-delay:延迟时间，单位为s，可以为小数。<br>当transition写在hover中，移开鼠标，瞬间回到过渡之前的状态；当transition不写在hover中，移开鼠标，会反向变换回到之前的状态。</p>
+<h2 id="2、transform过渡"><a href="#2、transform过渡" class="headerlink" title="2、transform过渡"></a>2、transform过渡</h2><p>transform:rotate(0deg) scale(1) skew(50deg) translate(0px);<br>1、rotate()只有一个值，顺时针为正，逆时针为负；<br>2、scale(x,y)当只有一个值的时候，x与y同时变大，scaleX()是只在X方向变化；<br>3、skew(x,y)当只有一个值的时候，延X轴倾斜，skewX()绕x轴倾斜；<br>4、translate(x,y)当只有一个值的时候，延x轴偏移，translateX()延x轴偏移；</p>
+<h2 id="2、transform-3D过渡"><a href="#2、transform-3D过渡" class="headerlink" title="2、transform-3D过渡"></a>2、transform-3D过渡</h2><p>1、rotateX:元素绕着X轴进行旋转；<br>   rotateY:元素绕着Y轴进行旋转；<br>   rotateZ：元素绕着Z轴进行旋转。<br> 无论2d还是3d都可以实现X/Y/Z轴的旋转。<br>2、perspective:视距，视角，设置查看者的位置<br>   transform-style:preserved-3d 设置这个属性后，所有的子元素都在3D空间呈现，设置这个属性就不能使用overflow:hidden<br>   transform:tranlateZ();在设置perspective和transform-style属性之后，就可以看出随着Z轴移动，视角的变化，立体感。<br>3、rotate()属性无论是不是3d模式，都是可以绕X/Y/Z轴旋转的；<br>   skew()属性没有绕Z轴倾斜的样式,即使设置3d模式，也没有绕Z轴倾斜的样式。</p>
+<h2 id="3、animation动画"><a href="#3、animation动画" class="headerlink" title="3、animation动画"></a>3、animation动画</h2><p>1、animation-name:hxy 动画的名称，自己取<br>2、animation-duration:2s;动画的持续时间，单位为s<br>3、animation-timing-function:ease;动画的效果，变化速度<br>4、animation-iteration-count:infinite;动画循环次数，默认一次，infinite为无限循环播放<br>5、animation-delay:1s;动画延迟时间，单位为s<br>6、animation-direction:alternate;动画的播放方向，默认为normal，alternate动画播放在偶数次相反方向播放，奇数次正常方向播放。<br>7、animation-fill-mode:设置动画之外的状态，默认为none，  forwards设置对象状态为动画结束时的状态；backwards设置对象状态为动画开始时的状态；both设置对象为动画结束或开始时的状态。<br>8、@keyframes hxy{}这个是定义动画的每一帧，可以用百分数表示。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/30/过渡-变形-动画/" data-id="ciq2chfrp00084msnpbtmmmnk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition-transform-animation/">transition-transform-animation</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-圆角-阴影-背景" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/29/圆角-阴影-背景/" class="article-date">
@@ -97,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/29/圆角-阴影-背景/" data-id="ciq0ubwxb000cwhsn395cdmk1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/29/圆角-阴影-背景/" data-id="ciq2chfs7000c4msnnpsj9541" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/圆角、阴影及背景图片/">圆角、阴影及背景图片</a></li></ul>
@@ -142,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq0ubwwz0003whsn81bhzmo2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq2chfrs00094msn0wtyl448" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li></ul>
@@ -198,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="ciq0ubwwu0001whsn39tzyy9b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/H5新增标签/" data-id="ciq2chfqy00004msnktko4ng6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li></ul>
@@ -258,7 +300,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="ciq0ubwx40006whsnwq6muep1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta标签详解及添加ico图标/" data-id="ciq2chfr500014msn3782n7ml" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li></ul>
@@ -301,7 +343,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="ciq0ubwwp0000whsnm7azumls" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/CSS3第一天详解/" data-id="ciq2chfrd00034msn7mr38qar" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li></ul>
@@ -343,7 +385,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="ciq0ubwx70008whsno4o93ont" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客2/" data-id="ciq2chfrk00064msngbjysoqe" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
@@ -382,7 +424,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="ciq0ubwx80009whsnchy50ap8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/博客第一天/" data-id="ciq2chfsn000m4msntuwopw24" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li></ul>
@@ -429,7 +471,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciq0ubwx10004whsnd9969dy2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciq2chfri00044msnofky7e47" class="article-share-link">Share</a>
       
       
     </footer>
@@ -451,7 +493,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/圆角、阴影及背景图片/">圆角、阴影及背景图片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3多种选择器/">CSS3多种选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5新增标签/">H5新增标签</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/em-rem-max-width-vw/">em/rem/max-width/vw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/meta标签与ico图标/">meta标签与ico图标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/transition-transform-animation/">transition-transform-animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/圆角、阴影及背景图片/">圆角、阴影及背景图片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/小程序员正在成长/">小程序员正在成长</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/用hexo搭建博客/">用hexo搭建博客</a></li></ul>
     </div>
   </div>
 
@@ -461,7 +503,7 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CSS3多种选择器/" style="font-size: 10px;">CSS3多种选择器</a> <a href="/tags/H5新增标签/" style="font-size: 10px;">H5新增标签</a> <a href="/tags/em-rem-max-width-vw/" style="font-size: 10px;">em/rem/max-width/vw</a> <a href="/tags/meta标签与ico图标/" style="font-size: 10px;">meta标签与ico图标</a> <a href="/tags/圆角、阴影及背景图片/" style="font-size: 10px;">圆角、阴影及背景图片</a> <a href="/tags/小程序员正在成长/" style="font-size: 10px;">小程序员正在成长</a> <a href="/tags/用hexo搭建博客/" style="font-size: 10px;">用hexo搭建博客</a>
+      <a href="/tags/CSS3多种选择器/" style="font-size: 10px;">CSS3多种选择器</a> <a href="/tags/H5新增标签/" style="font-size: 10px;">H5新增标签</a> <a href="/tags/em-rem-max-width-vw/" style="font-size: 10px;">em/rem/max-width/vw</a> <a href="/tags/meta标签与ico图标/" style="font-size: 10px;">meta标签与ico图标</a> <a href="/tags/transition-transform-animation/" style="font-size: 10px;">transition-transform-animation</a> <a href="/tags/圆角、阴影及背景图片/" style="font-size: 10px;">圆角、阴影及背景图片</a> <a href="/tags/小程序员正在成长/" style="font-size: 10px;">小程序员正在成长</a> <a href="/tags/用hexo搭建博客/" style="font-size: 10px;">用hexo搭建博客</a>
     </div>
   </div>
 
@@ -483,6 +525,10 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
       <ul>
         
           <li>
+            <a href="/2016/06/30/过渡-变形-动画/">过渡-变形-动画</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/29/圆角-阴影-背景/">圆角、阴影及背景颜色</a>
           </li>
         
@@ -496,10 +542,6 @@ favicon.ico：网站头像，在网站标题前面，在head标签中添加代�
         
           <li>
             <a href="/2016/06/24/meta标签详解及添加ico图标/">meta标签详解及添加ico图标</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/23/CSS3第一天详解/">CSS3知识点梳理</a>
           </li>
         
       </ul>
