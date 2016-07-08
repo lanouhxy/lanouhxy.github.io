@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>过渡-变形-动画 | 何新远博客</title>
+  <title>弹性布局及font-face | 何新远博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、transition过渡1、transition:all 1.5s ease 1s;transition-property:all/width/height/opacity,过渡的属性，不是所有属性都可以过渡，border大小就不可以过渡，而且过渡的属性，过渡前后的数值都需要写明；transition-duration:过渡需要的时间，单位是s，可以为小数；transition-timing-">
+  <meta name="description" content="1、font-face变换字体@font-face{    font-family:”好看的华文行楷”;    src:url(“fonts/华文行楷.ttf”);}p{    font-family:”好看的华文行楷”;    font-size:20px;}两个font-family要相同，要注意，有的一些特殊字体只能用于字母。
+2、resize改变元素尺寸大小div{    width:10">
 <meta property="og:type" content="article">
-<meta property="og:title" content="过渡-变形-动画">
-<meta property="og:url" content="http://yoursite.com/2016/06/30/过渡-变形-动画/index.html">
+<meta property="og:title" content="弹性布局及font-face">
+<meta property="og:url" content="http://yoursite.com/2016/07/05/弹性布局及font-face/index.html">
 <meta property="og:site_name" content="何新远博客">
-<meta property="og:description" content="1、transition过渡1、transition:all 1.5s ease 1s;transition-property:all/width/height/opacity,过渡的属性，不是所有属性都可以过渡，border大小就不可以过渡，而且过渡的属性，过渡前后的数值都需要写明；transition-duration:过渡需要的时间，单位是s，可以为小数；transition-timing-">
-<meta property="og:updated_time" content="2016-06-30T13:25:59.000Z">
+<meta property="og:description" content="1、font-face变换字体@font-face{    font-family:”好看的华文行楷”;    src:url(“fonts/华文行楷.ttf”);}p{    font-family:”好看的华文行楷”;    font-size:20px;}两个font-family要相同，要注意，有的一些特殊字体只能用于字母。
+2、resize改变元素尺寸大小div{    width:10">
+<meta property="og:updated_time" content="2016-07-08T14:39:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="过渡-变形-动画">
-<meta name="twitter:description" content="1、transition过渡1、transition:all 1.5s ease 1s;transition-property:all/width/height/opacity,过渡的属性，不是所有属性都可以过渡，border大小就不可以过渡，而且过渡的属性，过渡前后的数值都需要写明；transition-duration:过渡需要的时间，单位是s，可以为小数；transition-timing-">
+<meta name="twitter:title" content="弹性布局及font-face">
+<meta name="twitter:description" content="1、font-face变换字体@font-face{    font-family:”好看的华文行楷”;    src:url(“fonts/华文行楷.ttf”);}p{    font-family:”好看的华文行楷”;    font-size:20px;}两个font-family要相同，要注意，有的一些特殊字体只能用于字母。
+2、resize改变元素尺寸大小div{    width:10">
   
     <link rel="alternate" href="/atom.xml" title="何新远博客" type="application/atom+xml">
   
@@ -67,10 +70,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-过渡-变形-动画" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-弹性布局及font-face" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/06/30/过渡-变形-动画/" class="article-date">
-  <time datetime="2016-06-30T03:47:01.000Z" itemprop="datePublished">2016-06-30</time>
+    <a href="/2016/07/05/弹性布局及font-face/" class="article-date">
+  <time datetime="2016-07-05T13:19:10.000Z" itemprop="datePublished">2016-07-05</time>
 </a>
     
   </div>
@@ -81,7 +84,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      过渡-变形-动画
+      弹性布局及font-face
     </h1>
   
 
@@ -89,18 +92,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1、transition过渡"><a href="#1、transition过渡" class="headerlink" title="1、transition过渡"></a>1、transition过渡</h2><p>1、transition:all 1.5s ease 1s;<br>transition-property:all/width/height/opacity,过渡的属性，不是所有属性都可以过渡，border大小就不可以过渡，而且过渡的属性，过渡前后的数值都需要写明；<br>transition-duration:过渡需要的时间，单位是s，可以为小数；<br>transition-timing-function:过渡变换的效率，ease/linear/ease-in等属性；<br>transition-delay:延迟时间，单位为s，可以为小数。<br>当transition写在hover中，移开鼠标，瞬间回到过渡之前的状态；当transition不写在hover中，移开鼠标，会反向变换回到之前的状态。</p>
-<h2 id="2、transform过渡"><a href="#2、transform过渡" class="headerlink" title="2、transform过渡"></a>2、transform过渡</h2><p>transform:rotate(0deg) scale(1) skew(50deg) translate(0px);<br>1、rotate()只有一个值，顺时针为正，逆时针为负；<br>2、scale(x,y)当只有一个值的时候，x与y同时变大，scaleX()是只在X方向变化；<br>3、skew(x,y)当只有一个值的时候，延X轴倾斜，skewX()绕x轴倾斜；<br>4、translate(x,y)当只有一个值的时候，延x轴偏移，translateX()延x轴偏移；</p>
-<h2 id="2、transform-3D过渡"><a href="#2、transform-3D过渡" class="headerlink" title="2、transform-3D过渡"></a>2、transform-3D过渡</h2><p>1、rotateX:元素绕着X轴进行旋转；<br>   rotateY:元素绕着Y轴进行旋转；<br>   rotateZ：元素绕着Z轴进行旋转。<br> 无论2d还是3d都可以实现X/Y/Z轴的旋转。<br>2、perspective:视距，视角，设置查看者的位置<br>   transform-style:preserved-3d 设置这个属性后，所有的子元素都在3D空间呈现，设置这个属性就不能使用overflow:hidden<br>   transform:tranlateZ();在设置perspective和transform-style属性之后，就可以看出随着Z轴移动，视角的变化，立体感。<br>3、rotate()属性无论是不是3d模式，都是可以绕X/Y/Z轴旋转的；<br>   skew()属性没有绕Z轴倾斜的样式,即使设置3d模式，也没有绕Z轴倾斜的样式。</p>
-<h2 id="3、animation动画"><a href="#3、animation动画" class="headerlink" title="3、animation动画"></a>3、animation动画</h2><p>1、animation-name:hxy 动画的名称，自己取<br>2、animation-duration:2s;动画的持续时间，单位为s<br>3、animation-timing-function:ease;动画的效果，变化速度<br>4、animation-iteration-count:infinite;动画循环次数，默认一次，infinite为无限循环播放<br>5、animation-delay:1s;动画延迟时间，单位为s<br>6、animation-direction:alternate;动画的播放方向，默认为normal，alternate动画播放在偶数次相反方向播放，奇数次正常方向播放。<br>7、animation-fill-mode:设置动画之外的状态，默认为none，  forwards设置对象状态为动画结束时的状态；backwards设置对象状态为动画开始时的状态；both设置对象为动画结束或开始时的状态。<br>8、@keyframes hxy{}这个是定义动画的每一帧，可以用百分数表示。</p>
+        <h2 id="1、font-face变换字体"><a href="#1、font-face变换字体" class="headerlink" title="1、font-face变换字体"></a>1、font-face变换字体</h2><p><pre><br>@font-face{<br>    font-family:”好看的华文行楷”;<br>    src:url(“fonts/华文行楷.ttf”);<br>}<br>p{<br>    font-family:”好看的华文行楷”;<br>    font-size:20px;<br>}<br></pre><br>两个font-family要相同，要注意，有的一些特殊字体只能用于字母。</p>
+<h2 id="2、resize改变元素尺寸大小"><a href="#2、resize改变元素尺寸大小" class="headerlink" title="2、resize改变元素尺寸大小"></a>2、resize改变元素尺寸大小</h2><p><pre><br>div{<br>    width:100px;height:100px;border:1px solid black;<br>    resize:both;overflow:auto;<br>}<br>textarea{<br>    resize:horizontal;<br>}<br></pre><br>resize:none/both/horizontal/vertical;四个值，规定不能/能/只能水平/只能垂直.<br>上面举了两个例子，一个是对起始不能改变的div标签，改变要加上overflow:auto;才能实现改变。另一个是对起始可以改变的textarea标签，直接设置resize属性。  </p>
+<h2 id="3、column多列分隔"><a href="#3、column多列分隔" class="headerlink" title="3、column多列分隔"></a>3、column多列分隔</h2><p>column-count:设置列的数目<br>column-gap:各列之间的间隔宽度<br>column-rule:定义列与列间隔线的样式</p>
+<p><pre><br>div{<br>    width:500px;height:500px;<br>    border:1px solid black;<br>    column-count:4;<br>    column-gap:50px;<br>    column-rule:5px solid red;<br>}<br></pre><br>提示：column标签需要在前面加上webkit等的前缀。</p>
+<h2 id="4、弹性布局"><a href="#4、弹性布局" class="headerlink" title="4、弹性布局"></a>4、弹性布局</h2><p>display:box;使用弹性布局时候，必须给父级设置这个属性，只有设置这个属性，其子类才能使用下面的属性。<br>box-orient:horizontal/vertical;子类排列的方式，垂直还是水平。<br>box-flex:2;其子类占整个父类的分数。<br>box-direction:normal/reverse;子容器的排列顺序<br>box-align:start/center/end;子容器的垂直对齐方式<br>box-pack:start/center/end;子容器的水平对齐方式  </p>
+<p><pre><br>div{<br>    display:-webkit-box;<br>    -webkit-box-orient:horizontal;<br>}<br>div .span1{<br>    -webkit-box-flex:2;<br>}<br>div .span2{<br>    -webkit-box-flex:1;<br>}<br></pre><br>在div中有两个span标签，水平排列，第一个占三分之二，第二个占三分之一。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/30/过渡-变形-动画/" data-id="ciqdul1lc000ffjnnpmfmr04y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/05/弹性布局及font-face/" data-id="ciqdulavx000sfjnnx4jilw5y" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition-transform-animation/">transition-transform-animation</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/font-face及弹性布局/">font-face及弹性布局</a></li></ul>
 
     </footer>
   </div>
@@ -108,19 +113,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/07/05/弹性布局及font-face/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/05/meta媒体查询及less入门/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          弹性布局及font-face
+          @meta媒体查询及less入门
         
       </div>
     </a>
   
   
-    <a href="/2016/06/29/圆角-阴影-背景/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/06/30/过渡-变形-动画/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">圆角、阴影及背景颜色</div>
+      <div class="article-nav-title">过渡-变形-动画</div>
     </a>
   
 </nav>
